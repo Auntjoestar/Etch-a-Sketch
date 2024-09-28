@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+}
+
+.sketcher{
+    width: 80vh;
+    height: 80vh;
+    border: 1px solid black; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.black {
+    background-color: black !important;
+}
