@@ -33,8 +33,14 @@ function createGrid(proportion) {
     
     sketcher.childNodes.forEach(square => {
         square.addEventListener("mouseover", () => {
-            square.classList.add("black");
-            }
-        );
+            rgb = {
+                red: Math.random() * 255,
+                green: Math.random() * 255,
+                blue: Math.random() * 255,
+            }; 
+            square.style.backgroundColor= `rgb(${rgb.red}, ${rgb.green}, ${rgb.blue})`; 
+            actualOpacity = window.getComputedStyle(square).getPropertyValue("opacity");
+            square.style.opacity = actualOpacity - 0.10
+            });
     });
 }
